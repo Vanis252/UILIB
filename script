@@ -289,15 +289,15 @@ function Library:Create(xHubName,xGameName)
 	TextBox.BackgroundColor3 = Color3.fromRGB(40, 42, 60)
 	TextBox.Position = UDim2.new(0.242405459, 0, 0.183551848, 0)
 	TextBox.Size = UDim2.new(0, 408, 0, 35)
-	TextBox.Font = Enum.Font.SourceSans
+	TextBox.Font = Enum.Font.Gotham
 	TextBox.PlaceholderText = "Search"
 	TextBox.Text = ""
-	TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextBox.TextSize = 14.000
+	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.TextSize = 16.000
 
 	UICorner.Parent = TextBox
 	
-	local items = Section
+	local items = Tab
 
 	function UpdateResults()
 		local search = TextBox.Text
