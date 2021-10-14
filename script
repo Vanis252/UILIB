@@ -301,7 +301,7 @@ function Library:Create(xHubName,xGameName)
 
 	function UpdateResults()
 		local search = TextBox.Text
-		for i, v in	 pairs(items:GetChildren()) do
+			for i, v in	 pairs(items:GetChildren()) do
 			if v:IsA("TextButton") then
 				if search ~= "" then
 					local item = string.lower(v.Text)
